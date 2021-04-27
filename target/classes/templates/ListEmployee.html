@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Dokan Application</title>
+
+
+<link rel="stylesheet" href="bootstrap.min.css">
+<link rel="stylesheet" href="styledokan.css">
+</head>
+<body>
+
+	<div class="row ">
+	<div class="container my-2 ">
+	<h1>Employee List</h1>
+	<table border="1px"  class="table table-striped table-responsive- text-center">
+	
+	<thead>
+	<tr>
+	<th class="a">First Name</th>
+	<th class="a">Last Name</th>
+	<th class="a">Age</th>
+	<th class="a">Salary</th>
+	</tr>
+	</thead>
+	
+	<tbody>
+	
+	<tr th:each="employee:${ListEmployee}">
+	<td th:text="${employee.fristName}"></td>
+	<td th:text="${employee.lastName}"></td>
+	<td th:text="${employee.age}"></td>
+	<td th:text="${employee.salary}"></td>
+	
+	</tr>
+	
+	
+	
+	
+	
+	
+	</tbody>
+	
+	
+	
+	</table>
+	
+
+
+
+</div>
+</body>
+</html>

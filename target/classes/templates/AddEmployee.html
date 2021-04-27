@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>AddNewEmployee...!</title>
+<link rel="stylesheet" href="bootstrap.min.css">
+</head>
+<body>
+
+	<h1>AddNewEmployee....</h1>
+	<hr>
+	
+	<form  action="#" th:action="@{/SaveEmployee}"  th:object="${employee}" method="Post">
+	
+	<input type="text" th:field="*{fristName}"  class="form-control  ">
+	<input type="text" th:field="*{lastName}"   class="form-control  ">
+	<input type="text" th:field="*{age}" 		class="mb-4 form-control ">
+	<input type="text" th:field="*{salary}"     class="form-control  ">
+	<button type="submit" class="btn btn-info col-2">Save Employee</button>
+	</form>
+	
+	<div class="app">
+	
+	{{message}}
+	
+	</div>
+
+
+</body>
+
+<script type="text/javascript" src="vue.js"></script>
+
+<script type="text/javascript">
+
+th:obiect="${employee}";
+
+new Vue({
+
+	
+	el:".app",
+	data(){
+	
+	return{
+	message:*{fristName},
+	}
+	
+	}
+	
+
+
+
+})
+
+
+
+
+
+
+</script>
+
+
+
+
+
+
+</html>

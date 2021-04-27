@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Dokan Application</title>
+
+<style type="text/css">
+
+.nav{
+	text-decoration: none;
+	margin: 2vh;
+	padding:5vh;
+	font-size:25px;
+	color:silver;
+}
+.main-nav{
+	width: auto;
+	height: 50px;
+	background-image: url(image/3.jpg);
+	
+
+}
+
+</style>
+</head>
+<body>
+
+	<div class="main-nav">
+	
+		<a class="nav" th:href="@{/newemployee}">AddEmployee</a>
+		<a class="nav" href="listEmployee">ListEmployee</a>
+		<a class="nav" href="#">About as</a>
+		<a class="nav" href="#">Contact as</a>
+		
+	
+	</div>
+
+</body>
+</html>
